@@ -1,0 +1,13 @@
+{
+  "name": "adaptive-learning-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm install --legacy-peer-deps && npm run build",
+    "postinstall": "cd client && npm install --legacy-peer-deps && npm run build || echo 'Client build skipped'"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
